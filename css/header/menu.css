@@ -1,0 +1,19 @@
+.menu{
+    font-size: 1.4rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.encab--info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.encab--info > h1{
+    font-size: 1.23rem;
+    color: #fff;
+}
