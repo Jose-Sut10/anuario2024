@@ -10,7 +10,6 @@ const lecturaDatos = (datos)=>{
     });
 
     contenedor.appendChild(listaEst);
-    console.log(contenedor);
 }
 
 export default lecturaDatos;

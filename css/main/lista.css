@@ -1,0 +1,15 @@
+.contenido__container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.contenido__lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: rebeccapurple;
+}
+
+.fotosPerfil{
+    width: 8rem;
+}
