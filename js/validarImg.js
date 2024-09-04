@@ -1,16 +1,29 @@
-const validarImagen = (img,lista)=>{
+const validarImagen = (img,lista, perfil)=>{
+    const validExtensions = /\.(jpg|jpeg|png)$/i;
     
-    if((img.endsWith('jpg')) || (img.endsWith('jpeg')) || (img.endsWith('png'))){
+    if(validExtensions.test(img)){
         const itemLista = document.createElement("li");
+        const caja1 = document.createElement('div');
+        const divInfo = document.createElement("div");
         const foto = document.createElement('img');
+        const nombre = document.createElement('h3');
+        const frase = document.createElement("h4");
 
         foto.setAttribute('src',img);
         foto.classList.add("fotosPerfil");
+        nombre.innerHTML = perfil.name;
+        frase.innerHTML = perfil.frase;
 
-        itemLista.appendChild(foto);
+        caja1.appendChild(foto);
+        caja1.classList.add("div1");
+        divInfo.append(nombre, frase);
+        divInfo.classList.add('container__info');
+
+        itemLista.append(caja1, divInfo);
+        itemLista.classList.add("itemLista");
         lista.appendChild(itemLista);
     }else{
-        alert(`La imagen no se leyó porque no es un archivo .jpg o .jpeg`);
+        console.error(`La imagen no se leyó porque no es un archivo .jpg o .jpeg`);
     }
 }
 

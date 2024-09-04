@@ -5,11 +5,41 @@
 
 .contenido__lista{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    background-color: rebeccapurple;
+}
+
+.itemLista{
+    width: calc(44% - 1rem);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(252, 252, 252, 0.486);
+    overflow: hidden;
+}
+
+.div1{
+    text-align: center;
+    background-color: rgb(130, 207, 250);
+    border-radius: 10px 10px 0 0 ;
+}
+
+.container__info{
+    min-height: 110px;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.container__info > h3{
+    font-size: 1rem;
+    margin-top: .6rem;
 }
 
 .fotosPerfil{
-    width: 8rem;
+    width: calc(6rem - 1rem);
+    border-radius: 50%;
+    bottom: -40px;
+    position: relative;
 }
