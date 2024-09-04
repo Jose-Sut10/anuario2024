@@ -1,3 +1,4 @@
+import corazon from "./corazon.js";
 const validarImagen = (img,lista, perfil)=>{
     const validExtensions = /\.(jpg|jpeg|png)$/i;
     
@@ -14,10 +15,11 @@ const validarImagen = (img,lista, perfil)=>{
         nombre.innerHTML = perfil.name;
         frase.innerHTML = perfil.frase;
 
-        caja1.appendChild(foto);
         caja1.classList.add("div1");
-        divInfo.append(nombre, frase);
+        caja1.appendChild(foto);
+
         divInfo.classList.add('container__info');
+        divInfo.append(nombre, frase, corazon());
 
         itemLista.append(caja1, divInfo);
         itemLista.classList.add("itemLista");

@@ -37,9 +37,23 @@
     margin-top: .6rem;
 }
 
+.container__info > h4{
+    margin-bottom: 1rem;
+}
+
 .fotosPerfil{
     width: calc(6rem - 1rem);
     border-radius: 50%;
     bottom: -40px;
     position: relative;
+}
+
+.fav{
+    width: 1.2rem;
+    cursor: pointer;
+    stroke-width: 4rem;
+}
+
+.like{
+    fill: #f00d0d;
 }
