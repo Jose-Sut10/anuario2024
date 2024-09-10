@@ -1,5 +1,6 @@
 import lecturaDatos from "./libro.js";
 import like from "./like.js";
+import iconMenu from "./menu.js";
 
 const datosEstudiantes = [
     {
@@ -168,5 +169,6 @@ const datosEstudiantes = [
     }
 ];
 
+iconMenu();
 like();
 lecturaDatos(datosEstudiantes);
